@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productbikes",
+  "info": {
+    "singularName": "productbike",
+    "pluralName": "productbikes",
+    "displayName": "productbike"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imgbike": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "titlebike": {
+      "type": "string",
+      "required": true
+    },
+    "pricebike": {
+      "type": "decimal",
+      "required": true
+    },
+    "descbike": {
+      "type": "string",
+      "required": true
+    },
+    "ratebike": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}
