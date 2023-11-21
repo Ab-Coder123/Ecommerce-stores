@@ -1,10 +1,10 @@
-import Header2 from "../../components/header/Header2";
-import Header1 from "../../components/header/Header1";
-import Header3 from "../../components/header/Header3";
+import Header1 from "../../header/Header1";
+import Header2 from "../../header/Header2";
+import Header3 from "../../header/Header3";
 import { Box, CssBaseline, ThemeProvider } from "@mui/material";
-import { ColorModeContext, useMode } from "../../them";
-import Footer from "../../components/footer/footer";
-import ScrollToTop from "../../components/scroll/ScrollToTop";
+import { ColorModeContext, useMode } from "../../../them";
+import Footer from "../../footer/footer";
+import ScrollToTop from "../../scroll/ScrollToTop";
 import Hero from "../bike/hero/Hero"
 import Main from "../bike/main/main"
 const Bike = () => {

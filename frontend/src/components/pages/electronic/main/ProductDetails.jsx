@@ -4,12 +4,10 @@ import { AddShoppingCartOutlined } from "@mui/icons-material";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
-import { useState  } from "react";
+import { useState } from "react";
 
 const ProductDetails = ({ clickedProduct }) => {
   const [selectedImg, setselectedImg] = useState(0);
-
-
   return (
     <Box
       sx={{
@@ -23,7 +21,7 @@ const ProductDetails = ({ clickedProduct }) => {
         <img
           width={360}
           src={
-            clickedProduct.attributes.productImg.data[selectedImg].attributes
+            clickedProduct.attributes.Imgdevice.data[0].attributes
               .url
           }
           alt=""
@@ -32,13 +30,14 @@ const ProductDetails = ({ clickedProduct }) => {
 
       <Box sx={{ py: 2, textAlign: { xs: "center", sm: "left" } }}>
         <Typography variant="h5">
-          {clickedProduct.attributes.Product}
+          {clickedProduct.attributes.Titledevice
+          }
         </Typography>
         <Typography my={0.4} fontSize={"22px"} color={"crimson"} variant="h6">
-          ${clickedProduct.attributes.Price}
+          ${clickedProduct.attributes.Pricedevice}
         </Typography>
         <Typography variant="body1">
-          {clickedProduct.attributes.Description}
+          {clickedProduct.attributes.Dscdevice}
         </Typography>
 
         <Stack
@@ -59,7 +58,7 @@ const ProductDetails = ({ clickedProduct }) => {
               },
             }}
           >
-            {clickedProduct.attributes.productImg.data.map((item, index) => {
+            {clickedProduct.attributes.Imgdevice.data.map((item, index) => {
               return (
                 <ToggleButton
                   key={item.id}
@@ -92,10 +91,7 @@ const ProductDetails = ({ clickedProduct }) => {
           sx={{ mb: { xs: 1, sm: 0 }, textTransform: "capitalize" }}
           variant="contained"
         >
-          <AddShoppingCartOutlined 
-           onClick={() => {
-          }}
-          sx={{ mr: 1 }} fontSize="small" />
+          <AddShoppingCartOutlined sx={{ mr: 1 }} fontSize="small" />
           Buy now
         </Button>
       </Box>

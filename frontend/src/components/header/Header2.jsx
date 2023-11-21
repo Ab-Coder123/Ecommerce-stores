@@ -18,6 +18,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
+// import ProductDetails from "../main/ProductDetails";
 
 const Search = styled("div")(({ theme }) => ({
   flexGrow: 0.4,
@@ -35,6 +36,8 @@ const Search = styled("div")(({ theme }) => ({
     width: "330px",
   },
 }));
+
+
 
 const SearchIconWrapper = styled("div")(({ theme }) => ({
   padding: theme.spacing(0, 2),
@@ -171,7 +174,7 @@ const Header2 = () => {
 
       <Stack direction={"row"} alignItems={"center"}>
         <IconButton aria-label="cart">
-          <StyledBadge badgeContent={4} color="primary">
+          <StyledBadge badgeContent={0} color="primary">
             <ShoppingCartIcon />
           </StyledBadge>
         </IconButton>
@@ -180,6 +183,12 @@ const Header2 = () => {
           <Person2OutlinedIcon />
         </IconButton>
       </Stack>
+
+
+
+
+
+
     </Container>
   );
 };

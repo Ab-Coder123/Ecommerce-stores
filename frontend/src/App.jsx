@@ -1,6 +1,6 @@
 import  Home  from "./Home";
-import Bike from "./pages/bike/Bike"
-import Eleck from "./pages/electronic/Electronics"
+import Bike from "./components/pages/bike/Bike"
+import Eleck from "./components/pages/electronic/Electronics"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -11,8 +11,8 @@ function App() {
     
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/pages/bike/Bike" element={<Bike />} />
-        <Route path="/pages/electronic/Electronics" element={<Eleck />} />
+        <Route path="/components/pages/bike/Bike" element={<Bike />} />
+        <Route path="/components/pages/electronic/Electronics" element={<Eleck />} />
 
       </Routes>
     </BrowserRouter>

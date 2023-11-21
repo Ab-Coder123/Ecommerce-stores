@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "device_products",
+  "info": {
+    "singularName": "device-product",
+    "pluralName": "device-products",
+    "displayName": "device product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titledevice": {
+      "type": "string",
+      "required": true
+    },
+    "Imgdevice": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "Pricedevice": {
+      "type": "decimal",
+      "required": true
+    },
+    "Dscdevice": {
+      "type": "string",
+      "required": true
+    },
+    "Ratedevice": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

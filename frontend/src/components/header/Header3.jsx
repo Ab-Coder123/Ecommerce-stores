@@ -121,7 +121,7 @@ const Header3 = () => {
           }}
         >
 
-        <Link  className="a" to='/pages/bike/Bike'  > 
+        <Link  className="a" to='/components/pages/bike/Bike'  > 
           <MenuItem onClick={handleClose}>
             <ListItemIcon >
               <ElectricBikeOutlined fontSize="small" />
@@ -132,7 +132,7 @@ const Header3 = () => {
           </MenuItem>
           </Link>
 
-          <Link  className="a" to="/pages/electronic/Electronics"  > 
+          <Link  className="a" to="/components/pages/electronic/Electronics"  > 
           <MenuItem onClick={handleClose}>
             <ListItemIcon>
               <LaptopChromebookOutlined fontSize="small" />

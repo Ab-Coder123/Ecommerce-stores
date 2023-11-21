@@ -20,7 +20,7 @@ import {
   import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
   import { Close} from "@mui/icons-material";
   import ProductDetails from "./ProductDetails";
-  import { useGetproductByNameQuery } from "../../../Redux/product";
+  import { useGetproductByNameQuery } from "../../../../Redux/product";
   import { AnimatePresence, motion } from "framer-motion";
   
   const Main = () => {

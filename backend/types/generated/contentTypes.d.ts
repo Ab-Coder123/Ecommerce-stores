@@ -677,6 +677,40 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiDeviceProductDeviceProduct extends Schema.CollectionType {
+  collectionName: 'device_products';
+  info: {
+    singularName: 'device-product';
+    pluralName: 'device-products';
+    displayName: 'device product';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Titledevice: Attribute.String & Attribute.Required;
+    Imgdevice: Attribute.Media & Attribute.Required;
+    Pricedevice: Attribute.Decimal & Attribute.Required;
+    Dscdevice: Attribute.String & Attribute.Required;
+    Ratedevice: Attribute.Decimal & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::device-product.device-product',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::device-product.device-product',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiProductProduct extends Schema.CollectionType {
   collectionName: 'products';
   info: {
@@ -762,6 +796,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::device-product.device-product': ApiDeviceProductDeviceProduct;
       'api::product.product': ApiProductProduct;
       'api::productbike.productbike': ApiProductbikeProductbike;
     }

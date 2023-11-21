@@ -29,7 +29,7 @@ const Footer = () => {
           variant="text"
           color="primary"
         >
-          Ali Hassan
+            Abdulrahman Ahmed
         </Button>
         ©2023
       </Typography>
