@@ -29,7 +29,7 @@ const Footer = () => {
           variant="text"
           color="primary"
         >
-            Abdulrahman Ahmed
+            Abdulrahman Ahmedd
         </Button>
         ©2023
       </Typography>
